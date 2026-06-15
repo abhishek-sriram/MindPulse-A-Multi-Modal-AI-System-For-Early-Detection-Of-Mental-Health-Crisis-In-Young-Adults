@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 211 65% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 95%;
+    --secondary-foreground: 215 25% 25%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 170 55% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 88%;
+    --ring: 211 65% 45%;
+
+    --radius: 0.625rem;
+
+    --chart-1: 211 65% 45%;
+    --chart-2: 170 55% 42%;
+    --chart-3: 45 93% 47%;
+    --chart-4: 0 72% 51%;
+    --chart-5: 262 52% 47%;
+
+    --warning: 45 93% 47%;
+    --warning-foreground: 45 93% 12%;
+    --success: 152 60% 40%;
+    --success-foreground: 0 0% 100%;
+    --info: 211 65% 45%;
+    --info-foreground: 0 0% 100%;
+
+    --sidebar-background: 210 20% 97%;
+    --sidebar-foreground: 215 25% 25%;
+    --sidebar-primary: 211 65% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 30% 93%;
+    --sidebar-accent-foreground: 215 25% 25%;
+    --sidebar-border: 214 20% 90%;
+    --sidebar-ring: 211 65% 45%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 211 70% 55%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 15% 16%;
+    --muted-foreground: 215 12% 55%;
+
+    --accent: 170 55% 45%;
+    --accent-foreground: 220 20% 8%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 22%;
+    --ring: 211 70% 55%;
+
+    --warning: 45 85% 50%;
+    --warning-foreground: 45 85% 10%;
+    --success: 152 55% 45%;
+    --success-foreground: 220 20% 8%;
+    --info: 211 70% 55%;
+    --info-foreground: 220 20% 8%;
+
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 211 70% 55%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 220 15% 16%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 211 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  /* ⭐ PROFESSIONAL MENTAL HEALTH BACKGROUND */
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+
+    /* soft clinical gradient */
+    background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 40%, #ffffff 100%);
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* subtle glow effects (premium look) */
+  body::before {
+    content: "";
+    position: fixed;
+    top: -200px;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(59,130,246,0.12), transparent 70%);
+    z-index: -1;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    bottom: -200px;
+    left: -200px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(16,185,129,0.12), transparent 70%);
+    z-index: -1;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-sm;
+  }
+}
