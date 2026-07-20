@@ -154,6 +154,10 @@ Open `MindPulse_Model_Building.ipynb` to explore the training pipeline on `menta
 
 The full project write-up, methodology, and evaluation results are available in [`Final Project Report (Signed Copy).pdf`](./Final%20Project%20Report%20(Signed%20Copy).pdf).
 
+## 📄 Research Paper
+
+To view and download my published research paper, click [Paper Link](https://ieeexplore.ieee.org/document/11554646)
+
 ---
 
 ## 🛡️ Ethical Considerations
