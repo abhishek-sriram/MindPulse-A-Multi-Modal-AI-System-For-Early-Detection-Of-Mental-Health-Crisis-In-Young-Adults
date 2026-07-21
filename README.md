@@ -164,10 +164,6 @@ This system handles sensitive mental health data. It is designed for research an
 
 ---
 
-## 📜 License
-
-Add your preferred license (e.g., MIT) here.
-
 ## 🙌 Acknowledgments
 
 Built with FastAPI, scikit-learn, SHAP, React, shadcn/ui, and Groq-hosted LLaMA 3.3 70B.
