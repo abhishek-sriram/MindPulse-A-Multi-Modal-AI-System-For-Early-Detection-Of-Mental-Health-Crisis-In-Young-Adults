@@ -25,13 +25,8 @@ It was built as an academic research project exploring how multi-modal signals (
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────┐        ┌──────────────────────────────┐
-│      Frontend (SPA)      │  REST  │        Backend (API)          │
-│  React + TypeScript      │ <----> │  FastAPI (Python)              │
-│  Vite, Tailwind, shadcn/ui│       │  scikit-learn + SHAP           │
-│  React Router, Recharts  │        │  Groq (LLaMA 3.3 70B)          │
-└─────────────────────────┘        │  MySQL (users + assessments)  │
-                                    └──────────────────────────────┘
+![Architecture Diagram](https://github.com/abhishek-sriram/MindPulse-A-Multi-Modal-AI-System-For-Early-Detection-Of-Mental-Health-Crisis-In-Young-Adults/blob/main/Project%20Architecture%20Diagram.png?raw=true)
+
 ```
 
 ### Frontend
