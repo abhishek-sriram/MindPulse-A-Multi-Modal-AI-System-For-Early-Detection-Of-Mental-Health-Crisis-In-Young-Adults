@@ -24,10 +24,10 @@ It was built as an academic research project exploring how multi-modal signals (
 
 ## 🏗️ Architecture
 
-```
+
 ![Architecture Diagram](https://github.com/abhishek-sriram/MindPulse-A-Multi-Modal-AI-System-For-Early-Detection-Of-Mental-Health-Crisis-In-Young-Adults/blob/42b1b4ee5cd7bb70bc4c893d7319741f17ca6863/Project%20Architecture%20Diagram.png)
 
-```
+
 
 ### Frontend
 - **React 18 + TypeScript**, bundled with **Vite**
